@@ -5,6 +5,7 @@
     // part 1
     const id = ref('demo')
     const blueBox = ref(true)
+    
     const blueBtn = ref(true)
 
     // part 2
@@ -42,16 +43,20 @@
     <!-- note: need to use single quotes '' for classes such as btn-primary which contains '-' signs
                 because '-' is a minus operator for (Vue) JavaScript  -->
     <div id="part1">
-        <div>
-            div ID : {{id}} 
+        <div v-bind:id="id" class="m-2" v-bind:class="{'blueBox': blueBox, 'redBox': !blueBox}">
+            div ID: {{id}}
         </div>
-        
-        <button type="button" v-on:click="changeColor">Change Color</button>
+
+        <button type="button"
+            v-bind="{'btn': true, 'btn-primary': blueBtn, 'btn-danger':!blueBtn}"
+            @click="changeColor">Change Color
+        </button>
     </div>
 
+
     <div id="part2">
-        <div>
-            div ID : {{id}} 
+        <div v-bind:id="id2" class="m-2" v-bind:style="{'color':activeColor}">
+            div ID : {{id2}} 
         </div>
        
         <button type="button" v-on:click="changeTextColor">Change Text Color</button> 
