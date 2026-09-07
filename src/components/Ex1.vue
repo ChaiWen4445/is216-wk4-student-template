@@ -17,10 +17,7 @@
     <label for=""><input type="radio" name="fruit"> {{ fruit3 }} </label>  -->
 
 <label v-for="fruit in fruits" :key="fruit">
-    <input type="radio" name="fruit"> {( fruit )};    
-
-
-    
+    <input type="radio" name="fruit"> {{ fruit }} 
 
 </label>
     
