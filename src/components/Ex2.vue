@@ -7,8 +7,8 @@
     const myImg = ref("/assets/me.png")
 
     const obj = ref({
-        width: "200",
-        height: "200",
+        width: "300",
+        height: "400",
         src: ("/assets/me.png")
     })
 
