@@ -48,7 +48,7 @@
         </div>
 
         <button type="button"
-            v-bind="{'btn': true, 'btn-primary': blueBtn, 'btn-danger':!blueBtn}"
+            v-bind="{'btn': true, 'btn-primary': blueBtn, 'btn-danger':!blueBtn, 'background-color':redBox}"
             @click="changeColor">Change Color
         </button>
     </div>
