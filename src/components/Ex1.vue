@@ -19,6 +19,9 @@
 <label v-for="fruit in fruits" :key="fruit">
     <input type="radio" name="fruit"> {( fruit )};    
 
+
+    
+
 </label>
     
 </template>
